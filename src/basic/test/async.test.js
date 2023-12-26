@@ -1,4 +1,4 @@
-const fetchDog = require("../test/async");
+const fetchDog = require("./async");
 
 describe("비동기", () => {
   // 조금 느림 기다리기 때문
