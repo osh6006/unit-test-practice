@@ -61,4 +61,11 @@ describe("Calculator 테스트", () => {
       expect(cal.value).toBe(1.5);
     });
   });
+
+  // error test
+  it("add 함수는 100이상인 값에서 에러를 던져야 합니다.", () => {
+    expect(() => {
+      cal.add(1230);
+    }).toThrow("값이 100 이상은 될 수 없습니다!");
+  });
 });
